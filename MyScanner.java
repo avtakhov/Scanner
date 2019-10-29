@@ -69,10 +69,10 @@ public class MyScanner implements AutoCloseable {
     }
 
     public void skipEOL() throws IOException {
-        if ((char)cur == '\r') {
+        if (cur == '\r') {
             nextChar();
         }
-        if ((char)cur == '\n') {
+        if (cur == '\n') {
             nextChar();
         }
     }
